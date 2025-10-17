@@ -48,3 +48,15 @@ print(type("John"))
 print(type("Doe"))
 # Your country
 print(type("USA"))
+
+
+import math
+
+def Eclu_distance(x1, y1, x2, y2):
+    distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+    return distance
+
+
+x1, x2 = input("Enter x1 and x2 coordinates separated by a comma: ").split(',')
+y1, y2 = input("Enter y1 and y2 coordinates separated by a comma: ").split(',')
+print("The Euclidean distance between the points is:", Eclu_distance(float(x1), float(y1), float(x2), float(y2)))
